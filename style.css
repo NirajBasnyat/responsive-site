@@ -1,0 +1,199 @@
+/* ctlr+/  or ctlr+shift+/ to comment*/
+/* ctlr+ k before ctlr v to paste selected item*/
+body{
+	margin: 0 auto;
+	padding: 0;
+	line-height: 1.5;
+	background: #f4f4f4;
+	text-align: justify;
+	overflow-y: none;
+	font-family: helvetica,tahoma;
+	font-size: .9em;
+}
+.ham{
+	color: white;
+	font-size: 20px;
+}
+header img{
+	float: left;
+	padding: 10px 10px 0px 15px;
+
+}
+nav ul{
+	/*background: #43a286;*/
+	overflow: hidden;
+	color: white;
+	padding: 0;
+	text-align: right;
+	margin: 0;
+}
+nav ul li{
+	text-transform: uppercase;
+	color: white;
+	display: inline-block;
+	padding: 20px;
+	font-size: 20px;
+}
+nav li a{
+	text-decoration: none;
+	color: white;
+}
+nav li a:hover{
+	color: #ccc;
+	border-top: 2px solid white;
+	text-decoration: none;	
+}
+.handle{
+	width: 100%;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	display: none;
+}
+/*------------HERO_IMAGE SECTION---------*/
+.hero{
+	background: url('images/hero.jpg')no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	margin-bottom: 20px;
+}
+.hero h2{
+	text-align: center;
+	font-size: 7vw;
+	color: #4a2dc9;
+	font-family: helvetical,sans-serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	padding-top: 170px;
+}
+.hero p{
+	color: #f4f4f4;
+	text-align: center;
+	font-size: 3vw;
+	font-family: cursive,sans-serif;
+}
+/*-------------SHOWCASE SECTION-----------*/
+.showcase {
+	margin-bottom: 20px;
+	border-bottom: 2px solid black;
+
+}
+ p{
+	font-size: 1.2em;
+}
+/*---------------FORM SECTION------------*/
+
+.card{
+	background-color: #4a2ddd;
+	margin: 1.5em;
+	font-family: helvetica;
+}
+.card input{
+	margin-bottom: .5em;
+	text-align: center;
+}
+.card input[type="submit"]{
+	color: #f4f4f4;
+}
+/*---------------FOOTER SECTION------------*/
+
+footer{
+	background:#4a2ddd;
+	height: 200px; 
+}
+footer li{
+	padding: 0 30px;
+	padding-top: 65px;
+	display: inline-block;
+	font-size: 40px;
+}
+footer li a{
+	color: white;
+}
+footer h3{
+	color: white;
+	text-align: center;
+}
+footer p{
+	margin-top: 40px;
+	color: white;
+	text-align: center;
+}
+
+/*----------------PARALLAX----------------*/
+.parallax1{
+	background: url('images/parallax1.jpg') no-repeat fixed 100%;
+	background-size: cover;
+}
+/* .parallax2{
+	background: url('images/parallax2.jpg') no-repeat fixed 100%;
+	background-size: cover;
+} */
+.inner-parallax{
+	padding-top: 17%;
+}
+/*--------------MEDIA_QUERIES-------------*/
+@media screen and (max-width: 768px) {
+	nav ul{
+		max-height: 0;
+	}
+	.show{
+		max-height: 20em;
+	}
+	nav ul li{
+		width: 100%;
+		box-sizing: border-box;
+		text-align: left;
+		padding: 10px;
+		padding-left: 30px;
+	}
+	nav li:hover{
+	background: rgba(249, 238, 255,.6);
+	text-decoration: none;	
+	}
+	nav li a:hover{
+		border: none;
+	}
+
+	.handle{
+		display: block;
+	}
+	header img{
+		display: none;
+	}
+	.img{
+		background: url('images/N.png') no-repeat center center;
+		height: 90px;
+		margin: 10px;
+		padding: 10px;
+	}
+	/*--hero---*/
+	.hero{
+		height: 85vh;
+	}
+
+	/*--footer--*/
+	footer{
+		height: 350px; 
+	}
+	footer li{
+		font-size: 20px;
+}
+	footer h3{
+		margin-top: 30px;
+	}
+	footer p
+	{
+		margin-top: 40px;
+	}
+	.parallax1,.parallax2{
+		background: none;
+	}
+	.article img{
+		width: 87vw;
+	}
+	p{
+		font-size: 1em;
+	}
+}
